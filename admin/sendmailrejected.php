@@ -22,10 +22,10 @@ if (!empty($_GET['id'])) {
         $mail = new PHPMailer(true);
 
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'salonliyasoba@gmail.com';
-        $mail->Password = 'iakhnnijobrsfayv';
+        $mail->Host = '';
+        $mail->SMTPAuth = ;
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
@@ -37,7 +37,7 @@ if (!empty($_GET['id'])) {
             )
         );
 
-        $mail->setFrom('salonliyasoba@gmail.com');
+        $mail->setFrom('');
         $mail->addAddress($row['Email']);
 
         $mail->isHTML(true);
