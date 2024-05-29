@@ -32,12 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail = new PHPMailer(true);
 
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
+            $mail->Host = '';
             $mail->SMTPAuth = true;
-            $mail->Username = 'salonliyasoba@gmail.com';
-            $mail->Password = 'iakhnnijobrsfayv';
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port = 465;
+            $mail->Username = '';
+            $mail->Password = '';
+            $mail->SMTPSecure = '';
+            $mail->Port = ;
 
        
             $mail->SMTPOptions = array(
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 )
             );
 
-            $mail->setFrom('salonliyasoba@gmail.com');
+            $mail->setFrom('');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
